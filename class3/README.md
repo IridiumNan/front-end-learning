@@ -23,12 +23,12 @@
 
 ## 水平线标签
 
-`<br/>` 标签在 HTML 界面中创建水平线
+`<hr/>` 标签在 HTML 界面中创建水平线
 
 注意它是一个单标签
 
 ```html
-<br color="" width="" size="" align=""/>
+<hr color="" width="" size="" align=""/>
 ```
 
 **相关属性**
