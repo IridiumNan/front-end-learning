@@ -14,4 +14,13 @@
 <h6>六级标题</h6>
 ```
 
+## 标题位置摆放
 
+在标签中添加属性: `align='left center right'`, default left
+
+```html
+
+<h2 align='center'>中间对齐</h2>
+
+<h2 align='right'>右对齐</h2>
+```
