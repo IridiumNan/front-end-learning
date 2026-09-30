@@ -11,3 +11,9 @@ python -m http.server 8080
 ./start.sh
 # It will start a python file server on port 8080
 ```
+
+> [!NOTE]
+> 运行之后访问 <http://127.0.0.1:8080/> 即可
+> 如果使用的是服务器， 那么改成服务器的ip地址
+
+---

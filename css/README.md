@@ -21,13 +21,11 @@ CSS 规则由两个主要的部分构成: 选择器， 以及一条或者多条�
 
 多条属性之间使用 `;` 隔开
 
-```html
-<style>
-    h1{
-        color: blue;
-        font-size: 12px;
-    }
-</style>
+```css
+h1{
+    color: blue;
+    font-size: 12px;
+}
 ```
 
 `css` 样式可以直接写在 html 文件当中的 `<style>` 标签当中， 例如
