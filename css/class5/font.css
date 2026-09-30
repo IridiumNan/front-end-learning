@@ -1,0 +1,16 @@
+h1 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 50px;
+    /* 700 为 bold */
+    font-weight: 700;
+    font-family: " Noto Serif CJK SC";
+    font-style: "normal";
+}
+
+.code {
+    color: rgba(120, 13, 80, 0.7);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "0xProto Nerd Font Mono";
+    font-style: "italic";
+}
