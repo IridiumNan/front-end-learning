@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>关系选择器demo</title>
+
+		<style>
+			/* 处于内部， 无论多少层都会生效*/
+			#origin p {
+				color: red;
+			}
+			
+			/* 只有子代会生效*/
+			#father>p {
+				color: blue;
+			}
+			
+			#brother+p {
+				color: blue;
+			}
+			
+			#leader~p {
+				color: purple;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h3>后代选择器</h3>
+
+		<div id="origin">
+
+			<p>你好</p>
+
+			<ul>
+				<li>
+					<!-- 使用后代选择器， 依旧生效 -->
+					<p>世界</p>
+				</li>
+			</ul>
+		</div>
+
+		<h3>子代选择器</h3>
+		<div id="father">
+			<p>你好</p>
+
+			<ul>
+				<li>
+					<!-- 子代选择器， 内部不生效 -->
+					<p>世界</p>
+				</li>
+			</ul>
+		</div>
+
+		<h3>相邻兄弟选择器</h3>
+		<div>
+			<p id="brother">第一个元素</p>
+			<p>被兄弟选择器选中的元素</p>
+		</div>
+
+		<h3>通用兄弟选择器</h3>
+		<p>通用兄弟之前</p>
+		<p id="leader">通用兄弟开头</p>
+		<p>第一个元素</p>
+		<div>
+			gap
+		</div>
+		<p>第二个元素</p>
+	</body>
+</html>
