@@ -1,0 +1,82 @@
+p {
+    font-weight: bold;
+    color: lightgreen;
+}
+
+/* table1：仅表格本身有红框 */
+#table1 {
+    border: 1px solid red;
+}
+
+/* table2：表格本身和内部的 td 都是红框 */
+#table2 {
+    border: 1px solid red;
+}
+
+/* 指定表格当中的 td*/
+#table2 td {
+    border: 1px solid red;
+}
+
+/* table3：边框折叠，表格本身和内部的 td 都是蓝框 */
+#table3 {
+    border: 1px solid blue;
+    border-collapse: collapse;
+    /* border-collapse 必须作用在 table 本身 */
+}
+
+#table3 td {
+    border: 1px solid blue;
+}
+
+#table4 {
+    width: 400px;
+    height: 400px;
+
+    border-collapse: collapse;
+
+    border: 1px solid black;
+
+    /* 居中对齐 */
+    text-align: center;
+
+    color: darkcyan;
+}
+
+#table4 td {
+    border: 1px solid black;
+}
+
+#table5 {
+    width: 400px;
+    height: 400px;
+
+    border-collapse: collapse;
+
+    border: 1px solid black;
+
+    color: darkcyan;
+}
+
+#table5 td {
+    padding: 40px;
+
+    border: 1px solid black;
+}
+
+#table6 {
+    border-collapse: collapse;
+
+    border: 1px solid white;
+}
+
+#table6 td {
+    /* 背景设置为蓝色 */
+    background-color: blue;
+
+    /* 字体设置为白色 */
+    color: white;
+
+
+    border: 1px solid white;
+}
