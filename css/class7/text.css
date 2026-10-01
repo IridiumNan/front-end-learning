@@ -1,0 +1,28 @@
+h1 {
+    color: rgb(80, 9, 9);
+
+    text-align: center;
+
+    text-decoration: overline;
+}
+
+h2 {
+    /* 所有字母都大写*/
+    text-transform: uppercase;
+}
+
+
+h3 {
+    text-decoration: line-through;
+    text-transform: capitalize;
+}
+
+h4 {
+    /* 所有字母都小写*/
+    text-transform: lowercase;
+}
+
+p {
+    text-indent: 50px;
+    ;
+}
