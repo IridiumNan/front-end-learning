@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12463174",
+      "name": "linux",
+      "font_class": "linux",
+      "unicode": "e80b",
+      "unicode_decimal": 59403
+    },
+    {
+      "icon_id": "24647067",
+      "name": "golang",
+      "font_class": "go-logo-blue",
+      "unicode": "e580",
+      "unicode_decimal": 58752
+    },
+    {
+      "icon_id": "43280018",
+      "name": "linux-archlinux",
+      "font_class": "linux-archlinux",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "43280078",
+      "name": "linux-nixos",
+      "font_class": "linux-nixos",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    }
+  ]
+}
