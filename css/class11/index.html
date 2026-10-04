@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Flex Box demo</title>
+
+		<style>
+			.flex-container {
+				
+				/* 设置为弹性盒子*/
+				display: flex;
+				
+				width: 500px;
+				height: 500px;
+				
+				background-color: #555555;
+				
+				flex-direction: column;
+				
+				/* 垂直方向上居中*/
+				justify-content: center;
+				
+				/* 居下摆放 */
+				/* justify-content: flex-end; */
+				
+				/* 水平方向上居中摆放 */
+				align-items: center;
+				
+			}
+			
+			.box1 {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				
+				/* 权重为2 */
+				flex: 2;
+			}
+			
+			.box2 {
+				width: 100px;
+				height: 100px;
+				background-color: green;
+				
+				/* 权重为2 */
+				flex: 2;
+			}
+			
+			.box3 {
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				
+				/* 权重为1 */
+				flex: 1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="flex-container">
+
+			<div class="box1">
+			</div>
+			<div class="box2">
+			</div>
+			<div class="box3">
+			</div>
+		</div>
+	</body>
+</html>
