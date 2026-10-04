@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Sprite</title>
+		<style>
+			.icon1 {
+				/* 把内联元素变成块级元素 */
+				/* 这样才可以顺利设置大小 */
+				display: block;
+				width: 120px;
+				height: 120px;
+				background-image: url("icons.webp");
+				
+				border: 1px solid aqua;
+				
+				/* 图片向左向上移动 15px */
+				background-position: -33px -34px;
+			}
+			
+			.icon2 {
+				/* 把内联元素变成块级元素 */
+				/* 这样才可以顺利设置大小 */
+				display: block;
+				width: 120px;
+				height: 120px;
+				background-image: url("icons.webp");
+				
+				border: 1px solid aqua;
+				
+				/* -33 - (164 * 1)*/
+				background-position: -197px -34px;
+			}
+			
+			.icon3 {
+				display: block;
+				width: 120px;
+				height: 120px;
+				background-image: url("icons.webp");
+				
+				border: 1px solid aqua;
+				
+				/* -34 - (167 * 1)*/
+				background-position: -33px -201px;
+			}
+			
+			.icon4 {
+				display: block;
+				
+				width: 120px;
+				height: 120px;
+				background-image: url("icons.webp");
+				
+				border: 1px solid aqua;
+				
+				background-position: -530px -34px;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<img src="./icons.webp" alt="">
+		<span class="icon1"></span>
+		<span class="icon2"></span>
+		<span class="icon3"></span>
+		<span class="icon4"></span>
+	</body>
+</html>
