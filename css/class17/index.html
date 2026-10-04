@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>标题内容</title>
+
+		<style>
+			@keyframes myAnimation {
+				0% {
+					background-color: rgba(255, 255, 155, 1);
+					height: 300px;
+					width: 300px;
+				}
+				
+				50% {
+					background-color: rgba(255, 255, 155, 0.5);
+					height: 1000px;
+					width: 500px;
+				}
+				
+				100% {
+					background-color: rgba(255, 255, 155, 0.2);
+					height: 300px;
+					width: 300px;
+				}
+			}
+			
+			.box {
+				width: 300px;
+				height: 300px;
+				margin: 100px;
+				
+				background-color: rgba(255, 255, 155, 1);
+				
+				animation: myAnimation 2s linear 0s 5 normal;
+				
+				position: relative;
+				
+				top: 500px;
+			}
+			
+			/* 事件监听 */
+			/* 鼠标放到上面的时候， 动画停止 */
+			.box:hover {
+				animation-play-state: paused;
+			}
+			
+			@keyframes breathe {
+				0% {
+					opacity: .2;
+					box-shadow: 0 1px 2px rgba(255, 255, 255, .1);
+				}
+				
+				50% {
+					opacity: .5;
+					box-shadow: 0 1px 2px rgba(18, 190, 84, .76);
+				}
+				
+				100% {
+					opacity: 1;
+					box-shadow: 0 1px 30px rgba(59, 255, 255, 1);
+				}
+				
+			}
+			
+			.round {
+				width: 300px;
+				height: 300px;
+				margin: 50px auto;
+				background-color: #2b92d4;
+				border-radius: 40%;
+				box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+				
+				animation: breathe 2s ease-in-out infinite alternate;
+			}
+			
+			.round:hover {
+				animation-play-state: paused;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="round">
+		</div>
+		<div class="box">
+		</div>
+	</body>
+</html>
