@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>标题内容</title>
+
+		<style>
+			.box {
+				
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			
+			.float-box {
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+				float: left;
+			}
+			
+			.container {
+				width: 400px;
+				height: 400px;
+				background-color: yellow;
+			}
+			
+			img {
+				width: 300px;
+			}
+			
+			.float-img {
+				float: left;
+			}
+			
+			ul li {
+				float: left;
+				
+				margin-right: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="box">
+		</div>
+		<div class="float-box">
+		</div>
+
+		<div class="container">
+		</div>
+
+		<img src="../../assets/archlinux.jpeg" alt="">
+		<img src="../../assets/archlinux.jpeg" alt="">
+		<br>
+
+		解决图片空隙问题: 添加浮动
+		<img src="../../assets/archlinux.jpeg" alt="" class="float-img">
+		<img src="../../assets/archlinux.jpeg" alt="" class="float-img">
+
+		<br>
+
+		浮动应用: 将原本垂直摆放的元素改成水平摆放
+
+		<ul>
+			<li><a href="https://debian.org">Debian</a></li>
+			<li><a href="https://nixos.org">Nixos</a></li>
+			<li><a href="https://archlinux.org">Archlinux</a></li>
+			<li><a href="https://fedoraproject.org">Fedora</a></li>
+			<li><a href="https://ubuntu.com">Ubuntu</a></li>
+		</ul>
+	</body>
+</html>
