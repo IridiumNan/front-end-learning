@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>消除浮动 Demo</title>
+		<style>
+			.container {
+				width: 500px;
+				
+				background-color: #666;
+				
+				margin-bottom: 80px;
+			}
+			
+			.float-box {
+				
+				width: 100px;
+				height: 100px;
+				background-color: aqua;
+				float: left;
+				
+				margin: 5px;
+			}
+			
+			.with-height {
+				height: 300px;
+			}
+			
+			.affected {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			
+			.fix {
+				clear: both;
+			}
+			
+			.overflow {
+				overflow: hidden;
+				clear: both;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- <div class="container"> -->
+		<!---->
+		<!-- 	<div class="float-box"></div> -->
+		<!-- 	<div class="float-box"></div> -->
+		<!-- 	<div class="float-box"></div> -->
+		<!-- </div> -->
+
+		<div class="container with-height">
+			<div class="float-box"></div>
+			<div class="float-box"></div>
+			<div class="float-box"></div>
+			<div class="affected"></div>
+			<div class="affected fix"></div>
+		</div>
+
+		<div class="container overflow">
+			<div class="float-box"></div>
+			<div class="float-box"></div>
+			<div class="float-box"></div>
+			<div class="affected"></div>
+			<div class="affected fix"></div>
+		</div>
+	</body>
+</html>
