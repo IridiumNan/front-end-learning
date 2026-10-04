@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Posotion Absolute Demo</title>
+		<style>
+			#box1 {
+				width: 100px;
+				height: 100px;
+				
+				background-color: yellow;
+				
+				position: absolute;
+				
+				left: 200px;
+				
+				top: 100px;
+				
+				z-index: 50;
+			}
+			
+			#box2 {
+				width: 100px;
+				height: 100px;
+				
+				background-color: aqua;
+				
+				position: absolute;
+				
+				left: 150px;
+				top: 80px;
+				
+				z-index: 100;
+				
+			}
+			
+			div {
+				width: 300px;
+				height: 300px;
+				
+				background-color: #999;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		使用 z-index 来指定涂层覆盖的顺序
+		z-index 大的会覆盖 z-index 小的
+		
+		预期为 海蓝色的容器覆盖黄色
+		<div></div>
+		<div id="box1"></div>
+		<div id="box2"></div>
+	</body>
+</html>
