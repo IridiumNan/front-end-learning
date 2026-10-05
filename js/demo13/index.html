@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>You Title</title>
+	</head>
+
+	<body>
+		<p>Before the script...</p>
+		<!-- Change the path/to/js-file to your real file path-->
+		<button onclick="clickHandler()">Click ME</button>
+		<script>
+			// HTML Event
+
+			function clickHandler() {
+				let hint = document.createElement("p")
+
+				hint.innerText = "clicked"
+				document.body.appendChild(hint)
+
+			}
+		</script>
+
+		<button id="btn">Click me</button>
+		<script>
+			// DOM0 Event
+
+			function clickHandler() {
+				let hint = document.createElement("p")
+
+				hint.innerText = "clicked"
+				document.body.appendChild(hint)
+			}
+
+			let btn = document.getElementById("btn")
+
+			// set the onclick attribute
+			btn.onclick = clickHandler
+		</script>
+
+		<button id="btn1">CLICK ME</button>
+		<script>
+
+			function clickHandler() {
+				let hint = document.createElement("p")
+
+				hint.innerText = "clicked"
+				document.body.appendChild(hint)
+			}
+
+			let btn1 = document.getElementById("btn1")
+
+			btn1.addEventListener("click", clickHandler)
+			btn1.addEventListener("click", () => {
+				console.log("hello")
+			})
+		</script>
+
+		<p>After script</p>
+	</body>
+</html>
