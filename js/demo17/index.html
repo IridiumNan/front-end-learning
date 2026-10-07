@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>You Title</title>
+	</head>
+
+	<body>
+		<p>Before the script...</p>
+		<!-- Change the path/to/js-file to your real file path-->
+
+		UserName: <input type="text" id="username">
+		<br>
+		Password: <input type="password" id="password">
+
+		<form action="http://127.0.0.1:8081/hello" id="myForm">
+			<!-- <form action="http://192.168.122.211:8081/hello" id="myForm"> -->
+
+			Your Name: <input type="text" name="name">
+			<br>
+			<button id="resetBtn">Reset</button>
+			<button id="submitBtn">Submit</button>
+		</form>
+
+		<script src="form_event.js"></script>
+		<p>After script</p>
+	</body>
+</html>

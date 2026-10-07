@@ -35,3 +35,8 @@ keypress 只有在按下有值的键才会被触发, 按下 `Ctrl` `Alt` `Shift`
    }
   </script>
 ```
+
+> [!NOTE]
+> 已经有库提供了各种常量  
+> 可以直接调用而不需要自己记住编号  
+> <https://www.npmjs.com/package/keycode-js>
